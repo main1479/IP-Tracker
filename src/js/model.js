@@ -10,13 +10,12 @@ export const getIP = async function () {
 	} catch (err) {
 		throw err;
 	}
-};
+}; 
 
 export const getIPInfo = async function (ip) {
 	try {
-		const data = await API_CALL(`${API_URL}${ip}`);
+		const data = await API_CALL(`${API_URL}&domain=${ip}`);
 		state = data;
-		console.log(data);
 	} catch (err) {
 		throw err;
 	}

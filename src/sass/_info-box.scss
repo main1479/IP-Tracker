@@ -1,7 +1,7 @@
 .info {
 	position: relative;
 	width: 100%;
-	min-height: 65vh;
+	min-height: 70vh;
 
 	&__box {
 		position: relative;
@@ -12,7 +12,7 @@
 		align-items: flex-start;
 		padding: 4rem;
 		transform: translateY(-50%);
-		min-height: 17rem;
+		min-height: 15rem;
 		z-index: 2;
 		@media only screen and (max-width: $tab-land) {
 			flex-wrap: wrap;
@@ -22,7 +22,7 @@
 			flex: 1;
 			align-self: stretch;
 			position: relative;
-
+			padding: 0 1rem;
 			h4.heading {
 				margin-bottom: 1rem;
 			}
