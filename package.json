@@ -1,21 +1,26 @@
 {
-  "name": "ip_tracker",
-  "version": "1.0.0",
-  "description": "![Design preview for the IP address tracker coding challenge](./design/desktop-preview.jpg)",
-  "main": "index.js",
-  "dependencies": {
-    "leaflet": "^1.7.1",
-    "node-sass": "^5.0.0",
-    "parcel": "^2.0.0-beta.2"
-  },
-  "devDependencies": {
-    "@parcel/transformer-sass": "^2.0.0-beta.2"
-  },
-  "scripts": {
-    "sass": "node-sass sass/main.scss css/main.css -w",
-    "start": "parcel index.html",
-    "build": "parcel build index.html"
-  },
-  "author": "Mainul Islam",
-  "license": "ISC"
+	"name": "ip-tracker",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"sass": "node-sass src/sass/main.scss src/css/main.css -w",
+		"start": "parcel index.html",
+		"build": "parcel build index.html"
+	},
+	"author": "Mainul Islam",
+	"license": "ISC",
+	"devDependencies": {
+		"@babel/plugin-proposal-class-properties": "^7.13.0",
+		"@babel/plugin-proposal-private-methods": "^7.12.13",
+		"node-sass": "^5.0.0",
+		"parcel": "^2.0.0-beta.1"
+	},
+	"dependencies": {
+		"@babel/plugin-syntax-class-properties": "^7.12.13",
+		"core-js": "^3.8.3",
+		"fractional": "^1.0.0",
+		"leaflet": "^1.7.1",
+		"regenerator-runtime": "^0.13.7"
+	}
 }

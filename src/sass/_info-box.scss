@@ -4,6 +4,7 @@
 	min-height: 65vh;
 
 	&__box {
+		position: relative;
 		background: #fff;
 		border-radius: 15px;
 		box-shadow: 0 10px 80px rgba($color-primary, 0.1);
@@ -11,6 +12,8 @@
 		align-items: flex-start;
 		padding: 4rem;
 		transform: translateY(-50%);
+		min-height: 17rem;
+		z-index: 2;
 		@media only screen and (max-width: $tab-land) {
 			flex-wrap: wrap;
          padding: 3rem;
@@ -21,7 +24,7 @@
 			position: relative;
 
 			h4.heading {
-				margin-bottom: 1.5rem;
+				margin-bottom: 1rem;
 			}
 			&:not(:last-child) {
 				&::after {

@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<!-- displays site properly based on user's device -->
 
-		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png" />
 
 		<title>Frontend Mentor | IP Address Tracker</title>
 
@@ -13,10 +13,11 @@
 		<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet" />
 
 		<!-- ================ css files ================== -->
-		<link rel="stylesheet" href="./css/main.css" />
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+		<link rel="stylesheet" href="./src/css/main.css" />
 
 		<!-- ========= JAVASCRIPT FILES =============== -->
-		<script src="./js/controller.js" defer></script>
+		<script src="./src/js/controller.js" defer></script>
 	</head>
 	<body>
 		<header class="header">
@@ -36,7 +37,7 @@
 		<section class="info">
 			<div class="container">
 				<div class="info__box">
-					<div class="info__box--box info__box--box-ip">
+					<!-- <div class="info__box--box info__box--box-ip">
 						<h4 class="heading">ip address</h4>
 						<h2 class="heading">192.212.174.101</h2>
 					</div>
@@ -51,18 +52,27 @@
 					<div class="info__box--box info__box--box-isp">
 						<h4 class="heading">isp</h4>
 						<h2 class="heading">ZN IT Solution</h2>
-					</div>
+					</div> -->
+
+					<!-- <div class="spinner">
+                  <svg>
+                     <use xlink:href="images/spinner.svg#icon-spinner"></use>
+                  </svg>
+               </div> -->
+
+					<!-- <div class="spinner error">
+						<h2 class="error__message heading">Something went wrong  :(</h2>
+					</div> -->
 				</div>
 			</div>
-         <!-- ========================================= -->
-         <!-- ============== MAP ====================== -->
-         <!-- ========================================= -->
-         <div class="map" id="map"></div> 
+			<!-- ========================================= -->
+			<!-- ============== MAP ====================== -->
+			<!-- ========================================= -->
+			<div class="map" id="map"></div>
 		</section>
 
-		<!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://github.com/main1479" target="_blank">Mainul Islam</a>.
-  </div> -->
+		<div class="attribution">
+			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://github.com/main1479" target="_blank">Mainul Islam</a>.
+		</div>
 	</body>
 </html>
