@@ -1,0 +1,17 @@
+{
+  "name": "ip_tracker",
+  "version": "1.0.0",
+  "description": "![Design preview for the IP address tracker coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "dependencies": {
+    "leaflet": "^1.7.1",
+    "parcel": "^2.0.0-beta.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "Mainul Islam",
+  "license": "ISC"
+}
