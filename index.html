@@ -1,35 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | IP Address Tracker</title>
-  <!-- ================ css files ================== -->
-  <link rel="stylesheet" href="css/main.css">
-  
- <!-- ========= JAVASCRIPT FILES =============== -->
-  <script src="js/controller.js" defer></script>
-</head>
-<body>
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
 
-  IP Address Tracker
+		<title>Frontend Mentor | IP Address Tracker</title>
 
-  Search for any IP address or domain
+		<!-- ============ google fonts =============== -->
+		<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet" />
 
-  IP Address
-  Location
-  Timezone
-    UTC <!-- add offset value dynamically using the API -->
-  ISP
-  
-  <div class="attribution">
+		<!-- ================ css files ================== -->
+		<link rel="stylesheet" href="./css/main.css" />
+
+		<!-- ========= JAVASCRIPT FILES =============== -->
+		<script src="./js/controller.js" defer></script>
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<h1 class="heading mb-3">IP address tracker</h1>
+				<form class="form__search">
+					<input class="search__input" type="text" placeholder="Search for any IP adress or domain" />
+					<button type="submit" class="btn btn--submit">
+						<svg xmlns="http://www.w3.org/2000/svg" width="11" height="14"><path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6" /></svg>
+					</button>
+				</form>
+			</div>
+		</header>
+		<!-- ============================================ -->
+		<!-- =============== info section =============== -->
+		<!-- ============================================ -->
+		<section class="info">
+			<div class="container">
+				<div class="info__box">
+					<div class="info__box--box info__box--box-ip">
+						<h4 class="heading">ip address</h4>
+						<h2 class="heading">192.212.174.101</h2>
+					</div>
+					<div class="info__box--box info__box--box-location">
+						<h4 class="heading">location</h4>
+						<h2 class="heading">Narayanganj, Dhaka</h2>
+					</div>
+					<div class="info__box--box info__box--box-timezone">
+						<h4 class="heading">timezone</h4>
+						<h2 class="heading">UTC +06:00</h2>
+					</div>
+					<div class="info__box--box info__box--box-isp">
+						<h4 class="heading">isp</h4>
+						<h2 class="heading">ZN IT Solution</h2>
+					</div>
+				</div>
+			</div>
+         <!-- ========================================= -->
+         <!-- ============== MAP ====================== -->
+         <!-- ========================================= -->
+         <div class="map" id="map"></div> 
+		</section>
+
+		<!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/main1479" target="_blank">Mainul Islam</a>.
-  </div>
-
-  
-</body>
+  </div> -->
+	</body>
 </html>

@@ -5,10 +5,14 @@
   "main": "index.js",
   "dependencies": {
     "leaflet": "^1.7.1",
+    "node-sass": "^5.0.0",
     "parcel": "^2.0.0-beta.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.0.0-beta.2"
+  },
   "scripts": {
+    "sass": "node-sass sass/main.scss css/main.css -w",
     "start": "parcel index.html",
     "build": "parcel build index.html"
   },

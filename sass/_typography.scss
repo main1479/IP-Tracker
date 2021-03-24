@@ -1,0 +1,20 @@
+h1.heading{
+   font-size: 3.6rem;
+   text-align: center;
+   color: #fff;
+   font-weight: 500;
+   text-transform: capitalize;
+}
+
+h4.heading{
+   font-size: 1.8rem;
+   text-transform: uppercase;
+   color: $color-gray;
+   font-weight: 500;
+   letter-spacing: 1px;
+}
+
+h2.heading{
+   font-size: 2.8rem;
+   font-weight: 500;
+}

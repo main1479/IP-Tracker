@@ -1,0 +1,46 @@
+.header {
+	min-height: 35vh;
+	padding: 4rem 0 15rem 0;
+	background: url(../images/pattern-bg.png) no-repeat;
+	background-size: cover;
+	background-position: center center;
+	@media only screen and (max-width: $tab-land) {
+		padding-bottom: 25rem;
+	}
+	form.form__search {
+		display: flex;
+		align-items: center;
+		width: 100%;
+		max-width: 55rem;
+		margin: 0 auto;
+		height: 58px;
+		.search__input {
+			flex: 1;
+			padding: 2rem;
+			padding-right: 0;
+			border: none;
+			border-radius: 15px 0 0 15px;
+			font-size: 1.8rem;
+			font-family: inherit;
+			letter-spacing: 0.2px;
+			height: 100%;
+			@media only screen and (max-width: $laptop-land) {
+				font-size: 16px;
+			}
+		}
+
+		.btn {
+			height: 100%;
+			width: 10%;
+			min-width: 55px;
+			border: 0;
+			background: $color-primary;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			cursor: pointer;
+			flex: 0 0 5.8rem;
+			border-radius: 0 15px 15px 0;
+		}
+	}
+}

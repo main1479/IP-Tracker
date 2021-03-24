@@ -1,0 +1,42 @@
+*::after,
+*::before,
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+	outline: none;
+}
+
+::selection{
+	background: $color-primary;
+	color: #fff;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+
+	@media only screen and (max-width:$laptop-land){
+		font-size: 55%;
+	}
+	@media only screen and (max-width:$laptop-port){
+		font-size: 50%;
+	}
+}
+
+body {
+	font-size: 1.8rem;
+	font-family: $font-primary;
+	color: $color-primary;
+	line-height: 1.3;
+	overflow-x: hidden;
+}
+
+.container {
+	width: 90%;
+	max-width: 114rem;
+	margin: 0 auto;
+}

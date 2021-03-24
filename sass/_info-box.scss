@@ -1,0 +1,62 @@
+.info {
+	position: relative;
+	width: 100%;
+	min-height: 65vh;
+
+	&__box {
+		background: #fff;
+		border-radius: 15px;
+		box-shadow: 0 10px 80px rgba($color-primary, 0.1);
+		display: flex;
+		align-items: flex-start;
+		padding: 4rem;
+		transform: translateY(-50%);
+		@media only screen and (max-width: $tab-land) {
+			flex-wrap: wrap;
+         padding: 3rem;
+		}
+		&--box {
+			flex: 1;
+			align-self: stretch;
+			position: relative;
+
+			h4.heading {
+				margin-bottom: 1.5rem;
+			}
+			&:not(:last-child) {
+				&::after {
+					content: '';
+					width: 1px;
+					height: 80%;
+					position: absolute;
+					bottom: 0;
+					right: 0;
+					background: $color-gray;
+					opacity: 0.5;
+				}
+			}
+			&:not(:first-child) {
+				padding-left: 3rem;
+			}
+
+			@media only screen and (max-width: $tab-land) {
+				flex: 0 0 100%;
+				text-align: center;
+				&:not(:first-child) {
+					padding-left: 0;
+				}
+
+				&:not(:last-child) {
+               margin-bottom: 2rem;
+					&::after {
+						display: none;
+					}
+				}
+
+				h4.heading {
+					margin-bottom: 5px;
+				}
+			}
+		}
+	}
+}
