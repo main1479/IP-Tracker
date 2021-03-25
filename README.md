@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/simple-responsive-ip-tracker-app-rZ_5twrxT)
 - Live Site URL: [Add live site URL here](https://ip-tracker-v1.netlify.app)
 
 ## My process
